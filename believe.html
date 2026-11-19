@@ -9,10 +9,11 @@
 <body>
 <header>
   <a class="brand" href="index.html" aria-label="Believe it if you want, home"><span>Believe it</span><span>if you want</span></a>
-  <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+  <button class="menu" type="button" aria-label="Menu" title="Menu" aria-expanded="false" aria-controls="site-nav">
     <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20"/></svg>
   </button>
-  <nav id="site-nav">
+  <nav id="site-nav" aria-label="Main menu">
+    <div class="drawer-head"><small>Menu</small><button class="close" type="button" aria-label="Close menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l14 14M15 1L1 15"/></svg></button></div>
     <a href="index.html">Home</a>
     <a href="believe.html" aria-current="page">Believe</a>
     <a href="listen.html">Listen</a>
@@ -20,6 +21,7 @@
     <a href="affiliates.html">Discover</a>
     <a href="blog.html">Read</a>
   </nav>
+  <div class="scrim"></div>
 </header>
 <main>
   <section class="hero">
