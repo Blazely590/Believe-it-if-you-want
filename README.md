@@ -22,3 +22,6 @@ Black and white only, set in Archivo at its extra-wide, heavy cut to match the l
 
 ## Blog
 `blog.html` lists posts and each post is its own page (for example `zambia-economy-2026-11-19.html`). To add a post, copy an existing post file, change the text and sources, then add a row to `blog.html`. Keep the date, the sources and the figures together so each claim can be checked.
+
+## Footer and socials
+The footer is the same on every page. YouTube is live; Instagram, TikTok, X, Facebook and Spotify are greyed-out placeholders. To switch one on, replace its `<span class="social is-soon" ...>` with `<a class="social" href="YOUR-LINK" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)" title="Instagram">` and keep the icon inside, closing with `</a>`. The contact email is the `mailto:` link in the footer and on `legal.html`.
