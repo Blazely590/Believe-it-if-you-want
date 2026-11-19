@@ -19,3 +19,6 @@ Each recommendation on `affiliates.html` is an `<article class="tile" data-categ
 
 ## Theme
 Black and white only, set in Archivo at its extra-wide, heavy cut to match the logo. The font is bundled in `fonts/` (SIL Open Font License), so the site needs no external requests. Colours are the variables at the top of `styles.css`.
+
+## Blog
+`blog.html` lists posts and each post is its own page (for example `zambia-economy-2026-11-19.html`). To add a post, copy an existing post file, change the text and sources, then add a row to `blog.html`. Keep the date, the sources and the figures together so each claim can be checked.
