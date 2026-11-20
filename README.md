@@ -25,3 +25,23 @@ Black and white only, set in Archivo at its extra-wide, heavy cut to match the l
 
 ## Footer and socials
 The footer is the same on every page. YouTube is live; Instagram, TikTok, X, Facebook and Spotify are greyed-out placeholders. To switch one on, replace its `<span class="social is-soon" ...>` with `<a class="social" href="YOUR-LINK" target="_blank" rel="noopener" aria-label="Instagram (opens in a new tab)" title="Instagram">` and keep the icon inside, closing with `</a>`. The contact email is the `mailto:` link in the footer and on `legal.html`.
+
+## Tools and the PAYE calculator
+`tools.html` and the box on the home page share `tools.js`. The 2026 PAYE bands, NAPSA rate and cap, and NHIMA rate are the constants at the top of that file. Update them each year when the tax rates change, and check the sources listed on `tools.html`. The 2027 budget's proposed 39.5% top rate is deliberately not included until Parliament approves it.
+
+## Adding a recommendation on Discover
+In `affiliates.html`, replace the "First picks are on their way." line in the right category with one or more tiles inside `<div class="grid two">`:
+
+```html
+<article class="tile">
+  <small>Software tools</small>
+  <h3>Tool name</h3>
+  <p class="best">Best for: who it suits</p>
+  <p>One reason you recommend it.</p>
+  <a class="link" href="YOUR-AFFILIATE-LINK" target="_blank" rel="sponsored noopener">Try it free ↗</a>
+</article>
+```
+Always keep `rel="sponsored noopener"` on affiliate links.
+
+## Share image and favicon
+`og.png` is the picture shown when a page is shared on WhatsApp or Facebook, and the `og:image` address in each page points to `https://blazely590.github.io/Believe-it-if-you-want/og.png`. If you move to your own domain, replace that address in every page.
