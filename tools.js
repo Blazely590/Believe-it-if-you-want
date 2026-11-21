@@ -52,6 +52,7 @@
     var box = form.querySelector('input[name="napsa"]');
     var error = form.querySelector('.error');
     var result = form.querySelector('.result');
+    var next = form.querySelector('.next');
     var touched = false;
 
     function showError(show) {
@@ -64,6 +65,7 @@
       var gross = parsePay(value);
       if (gross === null) {
         result.hidden = true;
+        if (next) next.hidden = true;
         showError(value !== '' && (touched || fromSubmit) || fromSubmit);
         return;
       }
@@ -74,6 +76,7 @@
         if (out) out.textContent = money(r[key]);
       });
       result.hidden = false;
+      if (next) next.hidden = false;
     }
 
     form.addEventListener('submit', function (e) { e.preventDefault(); touched = true; update(true); });
